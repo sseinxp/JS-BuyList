@@ -1,16 +1,113 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
+<html lang="uk">
+<head>
     <meta charset="UTF-8">
     <title>My Page</title>
+	<link rel = "stylesheet" href = "style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+	<div class = "main_part">
+	
+		<section class="left_side">
+			<div class = "box">
+				<input type="text" name="typed_product" class ="input_window" placeholder="Назва товару" aria-label="Назва товару">
+				<button type="button" class ="add" data-tooltip="Додати товар">Додати</button>
+			</div>
+			<div class = "boxes">
+				<div class="product_announ">
+					<p class="product-needed product-n-needed">Помідори</p>
+				</div>
+
+				<div class ="counter">				
+					<div class = "count">3</div>
+			    </div>
+
+				<div class ="necessisty">
+					<button type="button" class="status" data-tooltip="Змінити статус">Куплено</button>
+				</div>
+			</div>
+
+			<div class ="boxes">
+				<div class="product_announ">
+					<p class="product-needed">Печиво</p>
+				</div>
+				
+			<div class="counter">	
+				<button type="button" class="minus" data-tooltip="Зменшити кількість">-</button>			
+				<div class="count">2</div>
+				<button type="button" class="plus" data-tooltip="Збільшити кількість">+</button>
+			</div>
+
+			<div class="necessisty">
+				<button type="button" class="status" data-tooltip="Змінити статус">Куплено</button>
+				<button type="button" class="delete" data-tooltip="Видалити товар">×</button>
+			</div>
+
+			</div>
+
+			<div class ="boxes">
+				<div class="product_announ">
+					<input type="text" name="product_name" class ="product-needed" value="Сир" aria-label="Назва товару">
+				</div>
+				
+			<div class="counter">	
+				<button type="button" class="minus_disabled" data-tooltip = "Ви досягли мін. кількості">-</button>			
+				<div class="count">1</div>
+				<button type="button" class="plus" data-tooltip="Збільшити кількість">+</button>
+			</div>
+
+			<div class="necessisty">
+				<button type="button" class="status" data-tooltip="Змінити статус">Куплено</button>
+				<button type="button" class="delete" data-tooltip="Видалити товар">×</button>
+			</div>
+			</div>
+
+		</section>
+
+		<section class = "right_side">
+
+			<div class="container">
+				<p class ="alike_text">Залишилося</p>
+			</div>
+
+			<div class="container">
+				<div class="result_list">
+					<div class ="result_list_product">Печиво</div>
+					<div class ="result_list_num">1</div>
+
+				</div>
+				<div class="result_list">
+					<div class ="product">Сік</div>
+					<div class ="result_list_num">1</div>
+
+				</div>
+
+			</div>
+
+			<div class="container">
+				<p class ="alike_text">Куплено</p>
+			</div>
+			
+			<div class="container">
+				<div class="result_list">
+					<div class ="product result_list_product_rest">Помідори</div>
+					<div class ="result_list_num result_list_num_rest">2</div>
+
+				</div>
+
+			</div>	 
+		</section>
+
+	</div>
+
+	<div class="badge">
+
+		<p class="badge-title">BuyList</p>
+		<p class="badge-author">Created by <br>Gunaza Kseniia</p>
+
+	</div>
+
 </body>
 </html>
