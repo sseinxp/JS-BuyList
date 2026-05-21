@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>BuyList</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="main_part">
+        <section class="left_side">
+            <div class="box">
+                <input type="text" id="productInput" class="input_window" placeholder="Назва товару" aria-label="Назва товару">
+                <button type="button" id="addButton" class="add" data-tooltip="Додати товар">Додати</button>
+            </div>
+            <div id="productList"></div>
+        </section>
+        <section class="right_side">
+            <div class="container"><p class="alike_text">Залишилося</p></div>
+            <div class="container stats_container" id="neededStats"></div>
+            <div class="container"><p class="alike_text">Куплено</p></div>
+            <div class="container stats_container no_border" id="boughtStats"></div>
+        </section>
+    </div>
+    <div class="badge">
+        <p class="badge-title">BuyList</p>
+        <p class="badge-author">Created by <br>Gunaza Kseniia</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
